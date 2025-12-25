@@ -1,0 +1,127 @@
+.upload-card {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid var(--edge);
+  box-shadow: 0 18px 34px rgba(20, 18, 24, 0.08);
+}
+
+.upload-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload-header h2 {
+  margin: 0 0 0.5rem;
+}
+
+.upload-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.upload-section {
+  background: var(--surface-tint);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(17, 16, 19, 0.08);
+}
+
+.upload-section h3 {
+  margin: 0 0 0.75rem;
+}
+
+.section-text {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.file-input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(17, 16, 19, 0.3);
+  border-radius: 14px;
+  padding: 0.85rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fff;
+}
+
+.file-input input {
+  display: none;
+}
+
+.file-meta {
+  margin-top: 0.75rem;
+}
+
+.file-name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.file-size {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.hash-card {
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(17, 16, 19, 0.1);
+}
+
+.encryption-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(17, 16, 19, 0.1);
+  display: grid;
+  gap: 0.75rem;
+}
+
+
+.success-card {
+  text-align: center;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.success-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(77, 182, 172, 0.2);
+  color: #1a5e56;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+}
