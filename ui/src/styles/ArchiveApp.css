@@ -1,0 +1,127 @@
+.archive-app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.archive-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem 5rem;
+}
+
+.archive-hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-card {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid var(--edge);
+  box-shadow: 0 20px 40px rgba(20, 18, 24, 0.08);
+}
+
+.hero-title {
+  margin: 0.85rem 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.hero-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero-flow {
+  background: linear-gradient(160deg, rgba(245, 165, 36, 0.12), rgba(77, 182, 172, 0.12));
+}
+
+.hero-subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.flow-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(17, 16, 19, 0.08);
+}
+
+.flow-step:last-child {
+  border-bottom: none;
+}
+
+.flow-index {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.flow-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.flow-text {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.archive-panel {
+  background: rgba(255, 255, 255, 0.68);
+  border-radius: 26px;
+  padding: 1.25rem;
+  border: 1px solid var(--edge);
+  box-shadow: 0 20px 40px rgba(20, 18, 24, 0.06);
+}
+
+.panel-tabs {
+  display: inline-flex;
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 0.35rem;
+  border: 1px solid var(--edge);
+  gap: 0.35rem;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.tab-button.active {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.panel-content {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .archive-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .panel-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
